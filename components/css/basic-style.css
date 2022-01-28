@@ -1,0 +1,61 @@
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-lg {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.btn-md {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.border-pill {
+  border-radius: 2rem;
+}
+
+.border-round {
+  border-radius: 50%;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+}
+
+.border-squre {
+  border-radius: 0.4rem;
+}
+
+.fs-lg {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.fs-md {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.fs-sm {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.fs-xs {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.btn-x-sm {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
