@@ -6,29 +6,6 @@
   width: 100%;
 }
 
-.btn-lg {
-  padding: 0.8rem 1.6rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.btn-md {
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.border-pill {
-  border-radius: 2rem;
-}
-
-.border-round {
-  border-radius: 50%;
-}
-
-.btn-sm {
-  padding: 0.4rem 0.8rem;
-}
 
 .border-squre {
   border-radius: 0.4rem;

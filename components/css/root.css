@@ -13,11 +13,12 @@
     --warning:  #826100;
     --danger: #7c0000;
 
-
+    --primary-bg:#9f64ffdc;
     --danger-bg:#ff757591;
     --warning-bg:#ffd65ca3;
     --info-bg:#45e6ffb5;
     --success-bg:#3de4638c;
+    --light-bg:#e2e2e2;
 
 }
 
