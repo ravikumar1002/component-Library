@@ -6,6 +6,9 @@
   width: 100%;
 }
 
+.d-none{
+  display: none;
+}
 
 .border-squre {
   border-radius: 0.4rem;
