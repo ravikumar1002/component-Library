@@ -17,4 +17,6 @@
   --info-bg: #45e6ffb5;
   --success-bg: #3de4638c;
   --light-bg: #e2e2e2;
+
+  --border-boxshadow: rgba(0, 0, 0, 0.1);
 }
