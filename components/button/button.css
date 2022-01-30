@@ -1,0 +1,111 @@
+.btn-block {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.btn-link {
+  padding: 0;
+  background-color: transparent;
+}
+
+.btn-disabled {
+  cursor: not-allowed;
+}
+
+.btn-lg {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.btn-md {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.border-pill {
+  border-radius: 2rem;
+}
+
+.border-round {
+  border-radius: 50%;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.btn-disabled-primary {
+  border: 1px solid var(--dark);
+}
+
+.btn-flote-primary {
+  box-shadow: -1px -1px 10px 5px var(--secondary);
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+.btn-flote-primary:hover {
+  color: var(--light);
+  background-color: var(--primary);
+}
+
+.btn-primary {
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+.btn-secondary {
+  color: var(--secondary);
+  background-color: var(--dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.btn-link a {
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+
+.btn-link-primary > a {
+  color: var(--info);
+  background-color: var(--light);
+}
+
+.btn-link-primary > a:hover {
+  background-color: var(--info);
+  color: var(--light);
+}
+
+.btn-ghost-primary {
+  color: var(--primary);
+}
+
+.btn-ghost-primary:hover {
+  color: var(--light);
+  background-color: var(--primary);
+}
+
+.btn-outline-primary {
+  outline: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.outline-primary:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.btn-icon-text-left i {
+  padding: 0 0.5rem 0 0;
+}
+
+.btn-icon-text-right i {
+  padding: 0 0 0 0.5rem;
+}
