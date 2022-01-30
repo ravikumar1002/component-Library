@@ -1,0 +1,35 @@
+
+
+.avatar-container {
+    display: inline-block;
+  }
+  
+  .avatar-xx-lg {
+    height: 4rem;
+    width: 4rem;
+    font-weight: bold;
+  }
+  
+  .avatar-x-lg {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .avatar-md{
+    height: 1.5rem;
+    width: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .avatar-primary {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  
+  
+  img[alt] {
+    font-size: small;
+    font-weight: lighter;
+  }
+  
