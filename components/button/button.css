@@ -43,7 +43,7 @@
 }
 
 .btn-flote-primary {
-  box-shadow: -1px -1px 10px 5px rgb(161 177 188);
+  box-shadow: -1px -1px 10px 5px var(--secondary);
   color: var(--primary);
   background-color: var(--light);
 }
