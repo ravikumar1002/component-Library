@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <span class="input-text-container">
+      <label for="first-name">First Name</label>
+      <input
+        type="text"
+        id="first-name"
+        class="full-w-input"
+        placeholder="Type somthing"
+      />
+    </span>
+
+    <span class="input-text-container input-err">
+      <label for="first-name">First Name*</label>
+      <input
+        type="text"
+        id="first-name"
+        class="full-w-input"
+        placeholder="Type somthing"
+      />
+      <div class="error-msg"><small>This is a required field</small></div>
+    </span>
+
+    <span class="input-radio-container">
+      <label for="radio-1"> <input type="radio"  id="radio-1" checked /> Default checked</label>
+      <label for="radio-2"> <input type="radio" id="radio-2"N />Normal</label>
+      <label for="disabled" class="input-radio-disabled"> <input type="radio" id ="disabled" disabled />Disabled</label>
+    </span>
+  </body>
+</html>
