@@ -21,7 +21,7 @@
 
 .card-body-md {
   width: 22rem;
-  box-shadow: 1px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 0px 0px 1px var(--border-boxshadow);
   border-radius: 10px;
   display: inline-block;
   border-radius: 0.5rem;
