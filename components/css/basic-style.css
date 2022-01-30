@@ -1,0 +1,41 @@
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.d-none{
+  display: none;
+}
+
+.border-squre {
+  border-radius: 0.4rem;
+}
+
+.fs-lg {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.fs-md {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.fs-sm {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.fs-xs {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.btn-x-sm {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
