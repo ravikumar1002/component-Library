@@ -1,43 +1,9 @@
 
-.top-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-
 .nav-bg-primary{
   background-color: var(--primary);
-}
-
-.horizontal-align{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.7rem;
 }
 
 .nav-text-primary{
   color: var(--light);
 }
 
-
-.input-search{
-    background-color: var(--light-bg);
-    display: inline-block;
-}
-
-.input-search-input{
-    border: none;
-    padding: 0.5rem 1rem ;
-    font-size: 1rem;
-    outline: none;
-    max-width: 25rem;
-}
-
-.input-search-icon{
-    padding: 0.5rem 1rem;
-}
