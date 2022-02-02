@@ -1,0 +1,36 @@
+.modal-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal{
+    width: 30rem;
+    position: relative;
+    padding: 1rem 2rem;
+    box-shadow: -4px 5px 16px 10px var(--border-boxshadow);
+    text-align: center;
+}
+
+.modal > *{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem;
+}
+
+
+.modal-flote-btn{
+    padding: 0;
+    margin: 0;
+}
+
+.modal-btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
