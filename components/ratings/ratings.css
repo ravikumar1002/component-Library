@@ -1,0 +1,19 @@
+
+.input-star{
+    display: none;
+}
+
+.star-rating{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    color:var(--secondary-bg);
+    font-size: 2rem;
+}
+
+.star-rating > input:checked ~ label {
+    color: var(--rating-color); 
+}
+
+.star-rating > label{
+    cursor: pointer;
+}
