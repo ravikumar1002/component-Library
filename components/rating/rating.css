@@ -1,0 +1,19 @@
+
+.rating-container{
+    display: inline-block;
+    color: var(--rating-color);
+}
+
+.rating-container input{
+    display: none;
+}
+
+.rating-container label{
+    cursor: pointer;
+}
+
+.rating-container input:checked + label ~ label{
+    color: var(--secondary-bg);
+}
+
+
