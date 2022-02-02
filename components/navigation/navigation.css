@@ -30,7 +30,7 @@
     display: inline-block;
 }
 
-.input-search > input{
+.input-search-input{
     border: none;
     padding: 0.5rem 1rem ;
     font-size: 1rem;
@@ -38,6 +38,6 @@
     max-width: 25rem;
 }
 
-.input-search i{
+.input-search-icon{
     padding: 0.5rem 1rem;
 }
