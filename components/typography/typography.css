@@ -1,0 +1,95 @@
+
+.fs-x-lg{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.fs-lg {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+  
+.fs-md {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+  
+.fs-sm {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+  
+.fs-xs {
+    font-size: 0.5rem;
+    line-height: 1rem;
+}
+
+.h-xs{
+    font-size: 0.5rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+
+.h-sm{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.h-md{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;  
+}
+
+.h-lg{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+.h-x-lg{
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 600;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+.fw-900{
+    font-weight: 900;
+}
+
+
+.text-centre{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+.text-grey{
+    color: var(--grey);
+}
+
+
