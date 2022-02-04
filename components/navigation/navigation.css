@@ -1,0 +1,15 @@
+
+.nav-bg-primary{
+  background-color: var(--primary);
+}
+
+.nav-text-primary{
+  color: var(--light);
+}
+
+.horizontal-align-centre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
