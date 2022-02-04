@@ -3,11 +3,13 @@
 @import url(basic-style.css);
 
 
-
 @import url(../alert/alert.css);
 @import url(../avatar/avatar.css);
 @import url(../badge/badge.css);
 @import url(../button/button.css);
 @import url(../card/card.css);
+@import url(../images/img.css);
+@import url(../input/input.css);
+@import url(../typography/typography.css);
 
 

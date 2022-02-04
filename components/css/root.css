@@ -3,20 +3,23 @@
 
   --primary: #6610f2;
   --secondary: #a2a2a2;
-  --light: #f8f9fa;
+  --light: #ffffff;
   --dark: #161616;
   --success: #004510;
   --info: #005462;
   --warning: #826100;
   --danger: #7c0000;
 
-  --primary-bg: #9f64ffdc;
+
+  --primary-bg: #9f64ffed;
   --secondary-bg :#9e9e9ec4;
-  --danger-bg: #ff757591;
-  --warning-bg: #ffd65ca3;
-  --info-bg: #45e6ffb5;
-  --success-bg: #3de4638c;
+  --danger-bg: #ff7575c5;
+  --warning-bg: #ffd65cc2;
+  --info-bg: #45e6ffca;
+  --success-bg: #3de464a9;
   --light-bg: #e2e2e2;
 
   --border-boxshadow: rgba(0, 0, 0, 0.1);
+  --rating-color: #ee9714f3;
+  --text-grey:grey;
 }
