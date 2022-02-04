@@ -19,12 +19,35 @@
 }
 
 
-input[type="radio"]{
+.input-radio{
   display: inline-block;
   margin: 0 0.3rem 0 0.3rem;
-}
+} 
 
 .input-radio-disabled {
     color: var(--secondary);
     cursor: not-allowed;
+}
+
+
+.input-search{
+  background-color: var(--light-bg);
+  display: inline-block;
+  border: 1px solid var(--dark);
+}
+
+.input-search-input{
+  border: none;
+  padding: 0.5rem 1rem ;
+  font-size: 1rem;
+  outline: none;
+  max-width: 25rem;
+}
+
+.input-search-icon{
+  padding: 0.5rem 1rem;
+}
+
+.input-bg{
+  background-color: var(--light-lg);
 }
