@@ -1,3 +1,13 @@
+
+.flex-space-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .centre {
   display: flex;
   justify-content: center;
@@ -14,28 +24,9 @@
   border-radius: 0.4rem;
 }
 
-.fs-lg {
-  font-size: 2rem;
-  line-height: 2.5rem;
+.list-style-none{
+  list-style-type: none;
 }
 
-.fs-md {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
 
-.fs-sm {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
 
-.fs-xs {
-  font-size: 0.5rem;
-  line-height: 1rem;
-}
-
-.btn-x-sm {
-  padding: 0.2rem 0.4rem;
-  font-size: 0.5rem;
-  line-height: 1rem;
-}
