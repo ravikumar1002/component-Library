@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>badge</title>
+    <title>particlesUI | Badge</title>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="badge.css" />
+    <link rel="stylesheet" href="../../docs/docs_badge/docs_badge.css" />
+    <link rel="stylesheet" href="../../docs/docs-css/docs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -17,93 +19,246 @@
   </head>
 
   <body>
+    <header class="component-header">
+      <div class="header-right">
+        <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+        <h1>
+          <a href="../../home/home.html" class="brand-name">particlesUI</a>
+        </h1>
+      </div>
+      <div>
+        <nav>
+          <ul class="header-link">
+            <li>
+              <a href="../../home/home.html" class="btn-secondary nav-btn">
+                <i class="fas fa-home home-page-icon"></i
+                ><span class="header-nav-text">Home</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="../../started/introduction/introduction.html"
+                class="btn-secondary nav-btn"
+                ><i class="fas fa-book home-page-icon"></i
+                ><span class="header-nav-text">Documentation</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <!-- Text -->
+    <main>
+      <div class="aside-drawer-container">
+        <aside class="drawer">
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../../started/introduction/introduction.html"
+                ><span>Introduction</span></a
+              >
+            </li>
+          </ul>
+          <div>
+            <h2>Component</h2>
+          </div>
+          <div>
+            <ul class="drawer-list">
+              <li class="drawer-item">
+                <a href="../alert/alert.html"><span>Alert</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../avatar/avatar.html"><span>Avatar</span></a>
+              </li>
 
-    <span class="badge-container"
-      >Lorem ipsum dolor<span
-        class="badge-number-round-x-sm badge-end-top badge-primary"
-        >1</span
-      ></span
-    >
+              <li class="drawer-item">
+                <a href="../badge/badge.html" id="active-tab"
+                  ><span>Badge</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../button/button.html"><span>Button</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../card/card.html"><span>Card</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../images/img.html"><span>Image</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../input/input.html"><span>Input</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../list/list.html"><span>Lists</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../modal/modal.html"><span>Modal</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../navigation/navigation.html"
+                  ><span>Navigation</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../ratings/ratings.html"><span>Rating</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../snackbar/snackbar.html"><span>Snackbar</span></a>
+              </li>
 
-    <span class="badge-container"
-      >Lorem ipsum dolor<span
-        class="badge-number-round-x-sm  badge-end-top badge-primary"
-        >1</span
-      ></span
-    >
+              <li class="drawer-item">
+                <a href="../typography/typography.html"
+                  ><span>Typography</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
 
-    <!-- Button -->
+      <div class="main-content">
+        <h1>Badge</h1>
+        <p>
+          Small numerical value, image and status descriptor for UI elements.
+        </p>
+        <section class="code-component">
+          <h2>Status Badge</h2>
+          <p>
+            In status badge you can use different status like
+            <code class="code-class-name">badge-active</code> ,
+            <code class="code-class-name">badge-busy</code> ,
+            <code class="code-class-name">badge-offline</code>, you can slao use
+            badge size according to avatar size like
+            <code class="code-class-name">badge-empty-round-x-sm</code>,
+            <code class="code-class-name">badge-empty-round-sm</code>,
+            <code class="code-class-name">badge-empty-round-md</code>,
+            <code class="code-class-name">badge-empty-round-lg</code>.
+          </p>
+          <p></p>
+          <div class="code-demo">
+            <div class="badge-container">
+              <img
+                src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                alt="avatar"
+                class="border-round avatar-md"
+              />
+              <span
+                class="badge-end-bottom badge-active badge-empty-round-md"
+              ></span>
+            </div>
+            <div class="badge-container">
+              <img
+                src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                alt="avatar"
+                class="border-round avatar-md"
+              />
+              <span
+                class="badge-end-bottom badge-busy badge-empty-round-md"
+              ></span>
+            </div>
+            <div class="badge-container">
+              <img
+                src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                alt="avatar"
+                class="border-round avatar-md"
+              />
+              <span
+                class="badge-end-bottom badge-offline badge-empty-round-md"
+              ></span>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image%2520src%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522%2520border-round%2520avatar-md%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-end-bottom%2520badge-active%2520badge-empty-round-md%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image%2520src%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522%2520border-round%2520avatar-md%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%253Cspan%2520class%253D%2522badge-end-bottom%2520badge-busy%2520badge-empty-round-md%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522%2520border-round%2520avatar-md%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522badge-end-bottom%2520badge-offline%2520badge-empty-round-md%2522%253E%253C%252Fspan%253E%250A%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
 
-    <button class="badge-container btn-sm btn-secondary border-squre">
-      <span>Badge</span>
-      <span class="badge-number-round-x-sm badge-start-top  badge-primary"
-        >1</span
-      >
-    </button>
-    
-    <button class="badge-container btn-sm btn-secondary border-squre">
-      <span>Badge</span>
-      <span class="badge-number-round-x-sm badge-end-top  badge-primary">1</span>
-    </button>
+        <section class="code-component">
+          <h2>Badge on button and icon</h2>
+          <p>
+            You can use badge size here with these classes:
+            <code class="code-class-name">badge-number-round-x-sm</code>,
+            <code class="code-class-name">badge-number-round-sm</code> ,
+            <code class="code-class-name">badge-number-round-md</code> ,
+            <code class="code-class-name">badge-number-round-lg</code>.
+          </p>
+          <div class="code-demo">
+            <button class="badge-container btn-sm btn-secondary border-squre">
+              <span>Button</span>
+              <span
+                class="badge-number-round-x-sm badge-start-top badge-primary"
+                >1</span
+              >
+            </button>
 
-    <!-- Icon -->
+            <span class="badge-container"
+              ><i class="fas fa-home fs-md"></i
+              ><span class="badge-number-round-x-sm badge-end-top badge-primary"
+                >1</span
+              ></span
+            >
+          </div>
+          <div class="code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=1034.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522badge-container%2520btn-sm%2520btn-secondary%2520border-squre%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EButton%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-number-round-x-sm%2520badge-start-top%2520badge-primary%2522%253E1%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cspan%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-home%2520fs-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-number-round-x-sm%2520badge-end-top%2520%2520badge-primary%2522%253E1%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
 
-    <span class="badge-container"
-      ><i class="fas fa-home fs-md"></i
-      ><span class="badge-number-round-x-sm badge-end-top  badge-primary"
-        >1</span
-      ></span
-    >
+        <section class="code-component">
+          <h2>Badge image and number on avatar</h2>
+          <p>
+            For image badge you can use different size like
+            <code class="code-class-name">badge-img-x-sm</code>,
+            <code class="code-class-name">badge-img-sm</code>,
+            <code class="code-class-name">badge-img-md</code>,
+            <code class="code-class-name">badge-img-lg</code> with these
+            classes. Number badge, you can use
+            <code class="code-class-name">badge-number-round-x-sm</code>,
+            <code class="code-class-name">badge-number-round-sm</code>,
+            <code class="code-class-name">badge-number-round-md</code>,
+            <code class="code-class-name">badge-number-round-lg</code>
+          </p>
+          <div class="code-demo">
+            <div class="badge-container">
+              <img
+                src="https://images.unsplash.com/photo-1559190394-df5a28aab5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="profile avatar"
+                class="border-round avatar-md"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1555191525-74c91fc116c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Image badge"
+                class="badge-img-md badge-end-bottom border-round"
+              />
+            </div>
 
-    <!-- With-badge -->
-
-    <div class="badge-container">
-      <span>
-        <img
-          src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-          alt="avatar"
-          class=" border-round avatar-md"
-        />
-      </span>
-      <span
-        class="badge-end-bottom badge-active badge-border badge-empty-round-x-sm"
-      ></span>
-    </div>
-
-    <div class="badge-container ">
-      <span>
-        <img
-          src="https://images.unsplash.com/photo-1559190394-df5a28aab5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-          alt="profile avatar"
-          class=" border-round avatar-md"
-        />
-
-        <img
-          src="https://images.unsplash.com/photo-1555191525-74c91fc116c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Image badge"
-          class="badge-img-md badge-end-bottom border-round"
-        />
-      </span>
-    </div>
-
-    <!-- ----squre-badge -->
-
-    <div class="badge-container">
-      <span>
-        <img
-          src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-          alt="avatar"
-          class="avatar-md"
-        />
-      </span>
-      <span
-        class="badge-start-top badge-primary badge-squre-x-sm"
-      >badge</span>
-    </div>
-
-     
-
+            <div class="badge-container">
+              <img
+                src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                alt="avatar"
+                class="border-round avatar-md"
+              />
+              <span
+                class="badge-number-round-x-sm badge-end-bottom badge-primary"
+                >1</span
+              >
+            </div>
+          </div>
+          <div class="code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=1034.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522profile%2520avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522%2520border-round%2520avatar-md%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Image%2520badge%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522badge-img-md%2520badge-end-bottom%2520border-round%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%2520%2520%2520%2520%2520%250A%2520%253C%252Fdiv%253E%250A%250A%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522%2520border-round%2520avatar-md%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-number-round-x-sm%2520badge-end-bottom%2520badge-primary%2522%253E1%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="../../docs/docs-css/main.js"></script>
   </body>
 </html>
