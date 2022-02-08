@@ -1,82 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>particlesUI | Avatar</title>
+    <link rel="stylesheet" href="avatar.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../../docs/docs-css/docs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avatar</title>
-  <link rel="stylesheet" href="avatar.css" />
-  <link rel="stylesheet" href="../css/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <body>
+    <header class="component-header">
+      <div class="header-right">
+        <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+        <h1>
+          <a href="../../home/home.html" class="brand-name">particlesUI</a>
+        </h1>
+      </div>
+      <div>
+        <nav>
+          <ul class="header-link">
+            <li>
+              <a href="../../home/home.html" class="btn-secondary nav-btn">
+                <i class="fas fa-home home-page-icon"></i
+                ><span class="header-nav-text">Home</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="../../started/introduction/introduction.html"
+                class="btn-secondary nav-btn"
+                ><i class="fas fa-book home-page-icon"></i
+                ><span class="header-nav-text">Documentation</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
+    <main>
+      <div class="aside-drawer-container">
+        <aside class="drawer">
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../../started/introduction/introduction.html"
+                ><span>Introduction</span></a
+              >
+            </li>
+          </ul>
+          <div>
+            <h2>Component</h2>
+          </div>
+          <div>
+            <ul class="drawer-list">
+              <li class="drawer-item">
+                <a href="../alert/alert.html"><span>Alert</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../avatar/avatar.html" id="active-tab"
+                  ><span>Avatar</span></a
+                >
+              </li>
 
-  <!-- Image-avatars -->
-  <span class="avatar-container avatar-lg">
-    <img
-      src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
-      alt="avatar" class="border-round" />
-  </span>
+              <li class="drawer-item">
+                <a href="../badge/badge.html"><span>Badge</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../button/button.html"><span>Button</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../card/card.html"><span>Card</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../images/img.html"><span>Image</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../input/input.html"><span>Input</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../list/list.html"><span>Lists</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../modal/modal.html"><span>Modal</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../navigation/navigation.html"
+                  ><span>Navigation</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../ratings/ratings.html"><span>Rating</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../snackbar/snackbar.html"><span>Snackbar</span></a>
+              </li>
 
-  <span class="avatar-container avatar-md">
-    <img
-      src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
-      alt="avatar" class="border-round" />
-  </span>
+              <li class="drawer-item">
+                <a href="../typography/typography.html"
+                  ><span>Typography</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
 
-  <span class="avatar-container avatar-sm">
-    <img
-      src="https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIxMzQ2ODk1&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
-      alt="avatar" class="border-round" />
-  </span>
+      <div class="main-content">
+        <h1>Avatar</h1>
+        <p>
+          Avatars can be used to represent people or objects. It supports
+          images, Icons, or letters.
+        </p>
 
+        <section class="code-component">
+          <h2>Image Avatar</h2>
+          <p>
+            Avatar is available in 3 different sizes. You need to include class
+            <code class="code-class-name">avatar-container</code> in div and for
+            size use <code class="code-class-name">avatar-sm</code>,
+            <code class="code-class-name">avatar-md</code>,
+            <code class="code-class-name">avatar-lg</code>.
+          </p>
+          <div class="code-demo">
+            <span class="avatar-container avatar-sm">
+              <img
+                src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+                alt="avatar"
+                class="border-round"
+              />
+            </span>
+            <span class="avatar-container avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1517423568366-8b83523034fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                alt="avatar"
+                class="border-round"
+              />
+            </span>
 
-  <!-- squre-avatar -->
+            <span class="avatar-container avatar-lg">
+              <img
+                src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+                alt="avatar"
+                class="border-round"
+              />
+            </span>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=897.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar-container%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image%2520src%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522border-round%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fspan%253E%250A%250A%2520%253Cspan%2520class%253D%2522avatar-container%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image%2520src%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522border-round%2522%2520%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522avatar-container%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image%2520src%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522border-round%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fspan%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-  <div>
-    <span class="avatar-container avatar-lg">
-      <img
-        src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
-        alt="avatar" class="border-squre" />
-    </span>
+        <section class="code-component">
+          <h2>Avatar Shapes</h2>
+          <p>
+            You can use different shapes of Avatar just add class
+            <code class="code-class-name">border-round</code> or
+            <code class="code-class-name">border-squre</code> in
+            <code class="code-class-name">img</code> tag.
+          </p>
+          <div class="code-demo">
+            <span class="avatar-container avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1517423568366-8b83523034fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                alt="avatar"
+                class="border-round"
+              />
+            </span>
+            <span class="avatar-container avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                alt="avatar"
+                class="border-squre"
+              />
+            </span>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=1034.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cspan%2520class%253D%2522avatar-container%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image%2520src%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522border-round%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522avatar-container%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image%2520src%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522border-squre%2522%2520%252F%253E%250A%253C%252Fspan%253E%250A"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-    <span class="avatar-container avatar-md">
-      <img
-        src="https://images.unsplash.com/photo-1571772805064-207c8435df79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MjY5OTU0Nw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
-        alt="avatar" class="border-squre" />
-    </span>
-
-    <span class="avatar-container avatar-sm">
-      <img
-        src="https://images.unsplash.com/photo-1583558085895-8c18d5473f0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MjY5OTU0Nw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
-        alt="avatar" class="border-squre" />
-    </span>
-  </div>
-
-  <!-- text-avatar -->
-
-  <div>
-    <span class="avatar-container avatar-lg border-round avatar-primary"><span class="centre avatar-text">1</span></span>
-    <span class="avatar-container avatar-md border-round avatar-primary"><span class="centre avatar-text">1</span></span>
-    <span class="avatar-container avatar-sm border-squre avatar-primary"><span class="centre avatar-text">1</span></span>
-  </div>
-  </div>
-
-  <!-- icon-avatar -->
-
-  <div>
-    <span class="avatar-container avatar-lg border-round avatar-primary"><span class="centre avatar-text"><i
-          class="fas fa-question"></i></span></span>
-    <span class="avatar-container avatar-md border-round avatar-primary"><span class="centre avatar-text"><i
-          class="fas fa-question"></i></span></span>
-    <span class="avatar-container avatar-sm border-squre avatar-primary"><span class="centre avatar-text"><i
-          class="fas fa-question"></i></span></span>
-  </div>
-  
-</body>
-
+        <section class="code-component">
+          <h2>Icon and Text/Number Avatar</h2>
+          <p>
+            You can use different icon, single or double alphabet letters and
+            any number.
+          </p>
+          <div class="code-demo">
+            <span class="avatar-container avatar-md border-round avatar-primary"
+              ><span class="centre avatar-text">1</span></span
+            >
+            <span class="avatar-container avatar-md border-round avatar-primary"
+              ><span class="centre avatar-text"
+                ><i class="fas fa-question"></i></span
+            ></span>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=1034.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar-container%2520avatar-md%2520border-round%2520avatar-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522centre%2520avatar-text%2522%253E1%253C%252Fspan%253E%250A%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522avatar-container%2520avatar-md%2520border-round%2520avatar-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%2520class%253D%2522centre%2520avatar-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-question%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fspan%253E%250A"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="../../docs/docs-css/main.js"></script>
+  </body>
 </html>
