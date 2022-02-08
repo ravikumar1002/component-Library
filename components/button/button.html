@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Button</title>
+    <title>particlesUI | Button</title>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="../../docs/docs-css/docs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -15,53 +16,332 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
-    <!-- btn-type -->
+    <header class="component-header">
+      <div class="header-right">
+        <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+        <h1>
+          <a href="../../home/home.html" class="brand-name">particlesUI</a>
+        </h1>
+      </div>
+      <div>
+        <nav>
+          <ul class="header-link">
+            <li>
+              <a href="../../home/home.html" class="btn-secondary nav-btn">
+                <i class="fas fa-home home-page-icon"></i
+                ><span class="header-nav-text">Home</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="../../started/introduction/introduction.html"
+                class="btn-secondary nav-btn"
+                ><i class="fas fa-book home-page-icon"></i
+                ><span class="header-nav-text">Documentation</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <button class="btn-primary btn-sm border-squre">Primary Button</button>
-    <button class="btn-sm btn-link btn-link-primary">
-      <a href="#">Link Button</a>
-    </button>
-    <button class="btn-sm btn-disabled btn-disabled-primary" disabled>
-      Disabled
-    </button>
-    <button class="btn-sm btn-outline-primary">Outline buttons</button>
-    <button class="btn-sm btn-ghost-primary">Ghost buttons</button>
+    <main>
+      <div class="aside-drawer-container">
+        <aside class="drawer">
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../../started/introduction/introduction.html"
+                ><span>Introduction</span></a
+              >
+            </li>
+          </ul>
+          <div>
+            <h2>Component</h2>
+          </div>
+          <div>
+            <ul class="drawer-list">
+              <li class="drawer-item">
+                <a href="../alert/alert.html"><span>Alert</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../avatar/avatar.html"><span>Avatar</span></a>
+              </li>
 
-    <!-- shape -->
+              <li class="drawer-item">
+                <a href="../badge/badge.html"><span>Badge</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../button/button.html" id="active-tab"
+                  ><span>Button</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../card/card.html"><span>Card</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../images/img.html"><span>Image</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../input/input.html"><span>Input</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../list/list.html"><span>Lists</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../modal/modal.html"><span>Modal</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../navigation/navigation.html"
+                  ><span>Navigation</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../ratings/ratings.html"><span>Rating</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../snackbar/snackbar.html"><span>Snackbar</span></a>
+              </li>
 
-    <button class="btn-sm btn-primary border-squre">Squre Buton</button>
-    <button class="btn-sm btn-primary border-pill">Pill buttons</button>
+              <li class="drawer-item">
+                <a href="../typography/typography.html"
+                  ><span>Typography</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
 
-    <!-- btn-size -->
+      <div class="main-content">
+        <h1>Button</h1>
+        <p>
+          Buttons allow users to take actions, and make choices, with a single
+          tap.
+        </p>
+        <section class="code-component">
+          <h2>Color Button</h2>
+          <p>
+            You can use different color button. To use this button just add
+            <code class="code-class-name">btn-primary</code>,
+            <code class="code-class-name">btn-secondary</code>,
+            <code class="code-class-name">btn-success</code>,
+            <code class="code-class-name">btn-info</code>,
+            <code class="code-class-name">btn-light</code> .
+          </p>
+          <div class="code-demo">
+            <button class="btn-primary btn-sm border-squre">
+              Primary Button
+            </button>
+            <button class="btn-secondary btn-sm border-squre">
+              Secondary Button
+            </button>
+            <button class="btn-success btn-sm border-squre">
+              Success Button
+            </button>
+            <button class="btn-info btn-sm border-squre">Info Button</button>
+            <button class="btn-danger btn-sm border-squre">
+              Danger Button
+            </button>
+            <button class="btn-light btn-sm border-squre">Light Button</button>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=1044.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-sm%2520border-squre%2522%253EPrimary%2520Button%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn-secondary%2520btn-sm%2520border-squre%2522%253ESecondary%2520Button%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn-success%2520btn-sm%2520border-squre%2522%253ESuccess%2520Button%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn-info%2520btn-sm%2520border-squre%2522%253EInfo%2520Button%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn-danger%2520btn-sm%2520border-squre%2522%253EDanger%2520Button%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn-light%2520btn-sm%2520border-squre%2522%253ELight%2520Button%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-    <button class="btn-x-sm btn-primary">x Small Button</button>
-    <button class="btn-lg btn-primary">Large Button</button>
-    <button class="btn-md btn-primary">Medium Button</button>
-    <button class="btn-sm btn-primary">small size</button>
+        <section class="code-component">
+          <h2>Types of Button</h2>
+          <p>
+            Here we have different types of button, just add style according to
+            you.
+          </p>
+          <div class="code-demo">
+            <button class="btn-primary btn-sm border-squre">
+              Primary Button
+            </button>
+            <button class="btn-sm btn-link btn-link-primary">
+              <a href="#">Link Button</a>
+            </button>
+            <button class="btn-disabled-primary btn-sm btn-disabled" disabled>
+              Disabled
+            </button>
+            <button class="btn-sm btn-outline-primary">Outline buttons</button>
+            <button class="btn-sm btn-ghost-primary">Ghost buttons</button>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=1044.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-primary%2520btn-sm%2520border-squre%2522%253EPrimary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn-sm%2520btn-link%2520btn-link-primary%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253ELink%2520Button%253C%252Fa%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn-disabled-primary%2520btn-sm%2520btn-disabled%2520%2522%2520disabled%253E%2520Disabled%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn-sm%2520btn-outline-primary%2522%253EOutline%2520buttons%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn-sm%2520btn-ghost-primary%2522%253EGhost%2520buttons%253C%252Fbutton%253E%250A%2520"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-    <!-- icon-button -->
+        <section class="code-component">
+          <h2>Different Shapes of Button</h2>
+          <p>
+            To use different Shapes of button, add
+            <code class="code-class-name">border-squre</code> and
+            <code class="code-class-name">border-pill</code>.
+          </p>
+          <div class="code-demo">
+            <button class="btn-sm btn-secondary border-squre">
+              Squre Buton
+            </button>
+            <button class="btn-sm btn-secondary border-pill">
+              Pill buttons
+            </button>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=1044.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-sm%2520btn-secondary%2520border-squre%2522%253ESqure%2520Buton%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn-sm%2520btn-secondary%2520border-pill%2522%253EPill%2520buttons%253C%252Fbutton%253E%250A%2520"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-    <button class="btn-primary btn-sm border-round">
-      <i class="far fa-check-circle"></i>
-    </button>
+        <section class="code-component">
+          <h2>Different Sizes of Button</h2>
+          <p>
+            You can also use different size of button according to size need ,
+            for this use <code class="code-class-name">btn-x-sm</code>,
+            <code class="code-class-name">btn-sm</code>,
+            <code class="code-class-name">btn-md</code>,
+            <code class="code-class-name">btn-lg</code> classes.
+          </p>
+          <div class="code-demo">
+            <button class="btn-lg btn-secondary">Large</button>
+            <button class="btn-md btn-secondary">Medium</button>
+            <button class="btn-sm btn-secondary">small</button>
+            <button class="btn-x-sm btn-secondary">x Small</button>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=572.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn-lg%2520btn-primary%2522%253ELarge%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn-md%2520btn-primary%2522%253EMedium%2520%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn-sm%2520btn-primary%2522%253Esmall%2520%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn-x-sm%2520btn-primary%2522%253Ex%2520Small%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-    <!-- icon-with-text -->
+        <section class="code-component">
+          <h2>Icons Button</h2>
+          <p>Any icon can we use inside the button.</p>
+          <div class="code-demo">
+            <button class="btn-primary btn-sm border-round">
+              <i class="far fa-check-circle"></i>
+            </button>
+            <button class="btn-primary btn-sm border-round">
+              <i class="fas fa-exclamation-triangle"></i>
+            </button>
+            <button class="btn-primary btn-sm border-round">
+              <i class="fas fa-bell"></i>
+            </button>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-sm%2520border-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-    <button class="btn-primary btn-sm btn-icon-text-left">
-      <span><i class="fas fa-bell fs-sm"></i></span> <span>Before Text</span>
-    </button>
-    <button class="btn-primary btn-sm btn-icon-text-right">
-      <span>After Text</span><span><i class="fas fa-bell fs-sm"></i></span>
-    </button>
+        <section class="code-component">
+          <h2>Button with Icon and Text</h2>
+          <p>
+            Position of the icon can be changed. It can be place right or left.
+          </p>
+          <div class="code-demo">
+            <button class="btn-primary btn-sm btn-icon-text-left">
+              <span><i class="fas fa-bell fs-sm"></i></span>
+              <span>Before Text</span>
+            </button>
+            <button class="btn-primary btn-sm btn-icon-text-right">
+              <span>After Text</span
+              ><span><i class="fas fa-bell fs-sm"></i></span>
+            </button>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-sm%2520btn-icon-text-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bell%2520fs-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253EBefore%2520Text%253C%252Fspan%253E%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-sm%2520btn-icon-text-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253EAfter%2520Text%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bell%2520fs-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-    <!-- block-button -->
-    <button class="btn-block btn-sm btn-primary">Block Button</button>
+        <section class="code-component">
+          <h2>Block Button</h2>
+          <p>
+            For block button just add
+            <code class="code-class-name">btn-block</code> class in button.
+          </p>
+          <div class="code-demo">
+            <button class="btn-block btn-sm btn-primary">Block Button</button>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-block%2520btn-sm%2520btn-primary%2522%253EBlock%2520Button%253C%252Fbutton%253E%250A"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-    <!-- float-btn -->
-
-    <button class="btn-float-top-right btn-float-primary btn-sm border-round ">
-      <i class="fas fa-plus"></i>
-    </button>
+        <section class="code-component">
+          <h2>Float Button</h2>
+          <p>
+            you can style button by just changing
+            <code class="code-class-name">btn-float-primary</code> class and
+            also you can select your button corner by adding
+            <code class="code-class-name">btn-float-top-right</code>,
+            <code class="code-class-name">btn-float-top-left</code> ,
+            <code class="code-class-name">btn-float-bottom-right</code> ,
+            <code class="code-class-name">btn-float-bottom-left</code>.
+          </p>
+          <div class="code-demo">
+            <button class="btn-float-primary btn-sm border-round">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="btn-float-primary btn-sm border-round">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn-float-top-right%2520btn-float-primary%2520btn-sm%2520border-round%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%2520%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="../../docs/docs-css/main.js"></script>
   </body>
 </html>
+
