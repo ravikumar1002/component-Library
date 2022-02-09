@@ -1,54 +1,177 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snackbar</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="snackbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>particlesUI | Snackbar</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="snackbar.css">
+  <link rel="stylesheet" href="../../docs/docs-css/docs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    
-        <div class="snackbar snackbar-left-bottom snackbar-danger">
-            <div class="snackbar-body">
-                <div class="snackbar-content">
-                    <p>Can't send photo. Retry in Lorem, </p>
-                </div>
 
-                <div>
-                    <button class="btn-primary btn-x-sm border-squre">
-                        Retry
-                    </button>
-                    <button class="btn btn-primary btn-x-sm border-squre">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
+  <header class="component-header">
+    <div class="header-right">
+      <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+      <h1><a href="../../home/home.html" class="brand-name">particlesUI</a></h1>
+    </div>
+    <div>
+      <nav>
+        <ul class="header-link">
+          <li>
+            <a href="../../home/home.html" class="btn-secondary nav-btn">
+              <i class="fas fa-home home-page-icon"></i><span class="header-nav-text">Home</span></a>
+          </li>
+          <li>
+            <a href="../../started/introduction/introduction.html" class="btn-secondary nav-btn"><i
+                class="fas fa-book home-page-icon"></i><span class="header-nav-text">Documentation</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="aside-drawer-container">
+      <aside class="drawer">
+        <ul class="drawer-list">
+          <li class="drawer-item">
+            <a href="../../started/introduction/introduction.html"><span>Introduction</span></a>
+          </li>
+        </ul>
+        <div>
+          <h2>Component</h2>
+        </div>
+        <div>
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../alert/alert.html"><span>Alert</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../avatar/avatar.html"><span>Avatar</span></a>
+            </li>
+
+            <li class="drawer-item">
+              <a href="../badge/badge.html"><span>Badge</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../button/button.html"><span>Button</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../card/card.html"><span>Card</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../images/img.html"><span>Image</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../input/input.html"><span>Input</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../list/list.html"><span>Lists</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../modal/modal.html"><span>Modal</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../navigation/navigation.html"><span>Navigation</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../ratings/ratings.html"><span>Rating</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../snackbar/snackbar.html" id="active-tab"><span>Snackbar</span></a>
+            </li>
+
+            <li class="drawer-item">
+              <a href="../typography/typography.html"><span>Typography</span></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <div class="main-content">
+      <h1>Snackbar </h1>
+      <p>Snackbars provide brief notifications. The component is also known as a toast.</p>
+
+      <section class="code-component">
+        <h2>Snackbar with Action Button</h2>
+        <div>
+          <button class="snackbar-demo-btn show-btn">Show Demo</button>
+        </div>
+        <div class="code-demo">
+          <div class="snackbar  snackbar-danger snackbar-demo-result">
+            <div class="snackbar-body">
+              <div class="snackbar-content">
+                <p>Can't send photo. Retry in Lorem, </p>
+              </div>
+              <div>
+                <button class="btn-primary btn-x-sm border-squre">
+                  Retry
+                </button>
+                <button class="btn btn-primary btn-x-sm border-squre">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="code-snippet">
+          <code>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2520snackbar-left-bottom%2520snackbar-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ECan%27t%2520send%2520photo.%2520Retry%2520in%2520Lorem%252C%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-x-sm%2520border-squre%2522%253ERetry%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-x-sm%2520border-squre%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </code>
+        </div>
+      </section>
+
+      <section class="code-component">
+        <h2>Simple Snackbar</h2>
+        <div>
+          <button class="snackbar-demo-btn show-btn">Show Demo</button>
         </div>
 
-
-        <div class="snackbar snackbar-centre-bottom snackbar-success">
+        <div class="code-demo">
+          <div class="snackbar snackbar-success snackbar-demo-result">
             <div class="snackbar-body">
-                <div class="snackbar-content">
-                    <p>Can't send photo. Retry in Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quod dolorem suscipit inventore corrupti, facere enim reprehenderit at distinctio!</p>
-                </div>
+              <div class="snackbar-content">
+                <p>Can't send photo. Retry in Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+                  quod dolorem suscipit inventore corrupti, facere enim reprehenderit at distinctio!</p>
+              </div>
             </div>
+          </div>
         </div>
-     
-        <script>
-          
+        <div class="code-snippet">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=572.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2520snackbar-success%2520snackbar-center-bottom%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ECan%27t%2520send%2520photo.%2520Retry%2520in%2520Lorem%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Provident%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quod%2520dolorem%2520suscipit%2520inventore%2520corrupti%252C%2520facere%2520enim%2520reprehenderit%2520at%2520distinctio%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          </code>
+        </div>
+      </section>
 
-        </script>
-
-        <script src="snackbar.js"></script>
-    
+    <section class="code-component">
+      <h3>Snackbar JS</h3>
+      <p>Add in youe js file for removing snackbar after 1s</p>
+      <div class="code-snippet">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=javascript&width=572.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=const%2520snackbarRemove%2520%253D%2520%2520document.querySelector%28%2522.snackbar%2522%29%250A%250AsetTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520snackbarRemove.classList.add%28%2522snackbar-remove%2522%29%250A%2520%257D%252C%25201000%29%253B%250A"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        </code>
+      </div>
+    </section>
+    </div>
+  </main>
+  <script src="../../docs/docs-css/main.js"></script>
+  <!-- <script src="./snackbar.js"></script> -->
+  <script src="../../docs/docs_snackbar/docs_snackbar.js"></script>
 </body>
 
 </html>
