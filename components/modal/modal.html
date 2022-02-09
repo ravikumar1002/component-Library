@@ -2,36 +2,144 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Model</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="modal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>particlesUI | Model</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="../../docs/docs_modal/docs_modal.css">
+  <link rel="stylesheet" href="../../docs/docs-css/docs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="modal-container">
-    <div class="modal">
-        <div class="modal-heading">
-            <h1> Modal Lorem ipsum</h4>
-        </div>
-        <div class="modal-content">
-            <p>Model content</p>
-        </div>
-        <div class="modal-btn">
-            <button class="btn-sm btn-primary border-squre"> button 1</button>
-            <button class="btn-sm btn-primary border-squre">button 2</button>
-            
-        </div>
-        <div class="modal-flote-btn">
-            <button class="btn-x-sm btn-flote-top-right"><i class="far fa-times-circle fs-md"></i> </button>
-        </div>
+
+  <header class="component-header">
+    <div class="header-right">
+      <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+      <h1><a href="../../index.html" class="brand-name">particlesUI</a></h1>
     </div>
-</div>
+    <div>
+      <nav>
+        <ul class="header-link">
+          <li>
+            <a href="../../index.html" class="btn-secondary nav-btn">
+              <i class="fas fa-home home-page-icon"></i><span class="header-nav-text">Home</span></a>
+          </li>
+          <li>
+            <a href="../../started/introduction/introduction.html" class="btn-secondary nav-btn"><i
+                class="fas fa-book home-page-icon"></i><span class="header-nav-text">Documentation</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="aside-drawer-container">
+      <aside class="drawer">
+        <ul class="drawer-list">
+          <li class="drawer-item">
+            <a href="../../started/introduction/introduction.html"><span>Introduction</span></a>
+          </li>
+        </ul>
+        <div>
+          <h2>Component</h2>
+        </div>
+        <div>
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../alert/alert.html"><span>Alert</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../avatar/avatar.html"><span>Avatar</span></a>
+            </li>
+
+            <li class="drawer-item">
+              <a href="../badge/badge.html"><span>Badge</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../button/button.html"><span>Button</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../card/card.html"><span>Card</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../images/img.html"><span>Image</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../input/input.html"><span>Input</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../list/list.html"><span>Lists</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../modal/modal.html" id="active-tab"><span>Modal</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../navigation/navigation.html"><span>Navigation</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../ratings/ratings.html"><span>Rating</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../snackbar/snackbar.html"><span>Snackbar</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../typography/typography.html"><span>Typography</span></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="main-content">
+      <h1>Modal </h1>
+      <p>A modal is a popup that is used to grab user's attention.</p>
+      
+      <div class="code-component">
+        <h2>Modal with button</h2>
+        <p>You can see live preview by clicking below button.</p>
+        <div>
+          <button class="modal-demo-btn show-btn">Show Demo</button>
+        </div>
+        <div class="code-demo" id="modal-demo">
+          <div class="modal-demo-result">
+            <div class="modal">
+              <div class="modal-heading">
+                <h1> Modal Lorem ipsum</h4>
+              </div>
+              <div class="modal-content">
+                <p>Model content</p>
+              </div>
+              <div class="modal-btn">
+                <button class="btn-sm btn-primary border-squre"> button 1</button>
+                <button class="btn-sm btn-secondary border-squre">button 2</button>
+              </div>
+              <div class="modal-float-btn">
+                <button class="btn-x-sm btn-float-top-right"><i class="far fa-times-circle fs-md"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet">
+          <code>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522modal-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-heading%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253E%2520Modal%2520Lorem%2520ipsum%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EModel%2520content%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-sm%2520btn-primary%2520border-squre%2522%253E%2520button%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-sm%2520btn-primary%2520border-squre%2522%253Ebutton%25202%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-flote-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-x-sm%2520btn-flote-top-right%2522%253E%253Ci%2520class%253D%2522far%2520fa-times-circle%2520fs-md%2522%253E%253C%252Fi%253E%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </code>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../docs/docs-css/main.js"></script>
+  <script src="../../docs/docs_modal/docs_modal.js"></script>
+
 </body>
 
 </html>

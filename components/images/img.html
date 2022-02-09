@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Img</title>
+    <title>particlesUI | Img</title>
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../images/img.css">
+    <link rel="stylesheet" href="../images/img.css" />
+    <link rel="stylesheet" href="../../docs/docs-css/docs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -15,23 +16,154 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
-    <img
-      src="https://images.unsplash.com/photo-1583558085895-8c18d5473f0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MjY5OTU0Nw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
-      alt=""
-      class="img-responsive"
-    />
+    <header class="component-header">
+      <div class="header-right">
+        <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+        <h1>
+          <a href="../../index.html" class="brand-name">particlesUI</a>
+        </h1>
+      </div>
+      <div>
+        <nav>
+          <ul class="header-link">
+            <li>
+              <a href="../../index.html" class="btn-secondary nav-btn">
+                <i class="fas fa-home home-page-icon"></i
+                ><span class="header-nav-text">Home</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="../../started/introduction/introduction.html"
+                class="btn-secondary nav-btn"
+                ><i class="fas fa-book home-page-icon"></i
+                ><span class="header-nav-text">Documentation</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <img
-      src="https://images.unsplash.com/photo-1571772805064-207c8435df79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MjY5OTU0Nw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
-      alt=""
-      class="img-round"
-    />
+    <main>
+      <div class="aside-drawer-container">
+        <aside class="drawer">
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../../started/introduction/introduction.html"
+                ><span>Introduction</span></a
+              >
+            </li>
+          </ul>
+          <div>
+            <h2>Component</h2>
+          </div>
+          <div>
+            <ul class="drawer-list">
+              <li class="drawer-item">
+                <a href="../alert/alert.html"><span>Alert</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../avatar/avatar.html"><span>Avatar</span></a>
+              </li>
 
-    <img
-      src="https://images.unsplash.com/photo-1571772805064-207c8435df79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MjY5OTU0Nw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
-      alt=""
-      class="img-squre"
-    />
+              <li class="drawer-item">
+                <a href="../badge/badge.html"><span>Badge</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../button/button.html"><span>Button</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../card/card.html"><span>Card</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../images/img.html" id="active-tab"
+                  ><span>Image</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../input/input.html"><span>Input</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../list/list.html"><span>Lists</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../modal/modal.html"><span>Modal</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../navigation/navigation.html"
+                  ><span>Navigation</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../ratings/ratings.html"><span>Rating</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../snackbar/snackbar.html"><span>Snackbar</span></a>
+              </li>
+
+              <li class="drawer-item">
+                <a href="../typography/typography.html"
+                  ><span>Typography</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="main-content">
+        <h2>Image</h2>
+        <div class="code-component">
+          <h2>Responsive Image</h2>
+          <p>
+            For using responsive image just use
+            <code class="code-class-name">img-responsive</code>.
+          </p>
+          <div class="code-demo res-img">
+            <img
+              src="https://images.unsplash.com/photo-1608096281339-5bcae1ec2f12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+              alt=""
+              class="img-responsive"
+            />
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%2520Image%2520src%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%252F%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+
+        <div class="code-component">
+          <h2>Round Image</h2>
+          <p>
+            For using responsive image just use
+            <code class="code-class-name">img-round</code>.
+          </p>
+          <div class="code-demo round-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1571772805064-207c8435df79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MjY5OTU0Nw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+              alt=""
+              class="img-round"
+            />
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cimg%250A%2520%2520src%253D%2522%2522%250A%2520%2520alt%253D%2522%2522%250A%2520%2520class%253D%2522img-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../../docs/docs-css/main.js"></script>
   </body>
 </html>

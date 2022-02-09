@@ -1,0 +1,16 @@
+:root {
+  --text-gray: gray;
+}
+
+.code-demo {
+  flex-direction: column;
+}
+
+.code-demo > p {
+  display: block;
+  width: 100%;
+}
+
+.code-demo > .text-gray {
+  color: var(--text-gray);
+}

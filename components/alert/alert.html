@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alert</title>
+    <title>particlesUI | Alert</title>
     <link rel="stylesheet" href="alert.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../../docs/docs-alert/docs-alert.css" />
+    <link rel="stylesheet" href="../../docs/docs-css/docs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -14,70 +16,240 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <!-- alert-with-basic -->
-
-    <div class="alert-container alert-error">
-      <p>This is an error alert — check it out!</p>
-    </div>
-
-    <div class="alert-container alert-warning">
-      <p>This is a warning warning — check it out!</p>
-    </div>
-
-    <div class="alert-container alert-info">
-      <p>This is an info info — check it out!</p>
-    </div>
-
-    <div class="alert-container alert-success">
-      <p>This is a success success — check it out!</p>
-    </div>
-
-    <!-- alert-with-icon -->
-
-    <div class="alert-container alert-error alert-icons">
-      <div>
-        <span> <i class="fas fa-exclamation-circle"></i></span>
+    <header class="component-header">
+      <div class="header-right">
+        <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+        <h1>
+          <a href="../../index.html" class="brand-name">particlesUI</a>
+        </h1>
       </div>
       <div>
-        <p>This is an error alert with icon - check it out!</p>
+        <nav>
+          <ul class="header-link">
+            <li>
+              <a href="../../index.html" class="btn-secondary nav-btn">
+                <i class="fas fa-home home-page-icon"></i
+                ><span class="header-nav-text">Home</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="../../started/introduction/introduction.html"
+                class="btn-secondary nav-btn"
+                ><i class="fas fa-book home-page-icon"></i
+                ><span class="header-nav-text">Documentation</span></a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- alert-with-description -->
+    <main>
+      <div class="aside-drawer-container">
+        <aside class="drawer">
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../../started/introduction/introduction.html"
+                ><span>Introduction</span></a
+              >
+            </li>
+          </ul>
+          <div>
+            <h2>Component</h2>
+          </div>
+          <div>
+            <ul class="drawer-list">
+              <li class="drawer-item">
+                <a href="../alert/alert.html" id="active-tab"
+                  ><span>Alert</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../avatar/avatar.html"><span>Avatar</span></a>
+              </li>
 
-    <div class="alert-container alert-error alert-icons">
-      <div>
-        <span> <i class="fas fa-exclamation-circle"></i></span>
+              <li class="drawer-item">
+                <a href="../badge/badge.html"><span>Badge</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../button/button.html"><span>Button</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../card/card.html"><span>Card</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../images/img.html"><span>Image</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../input/input.html"><span>Input</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../list/list.html"><span>Lists</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../modal/modal.html"><span>Modal</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../navigation/navigation.html"
+                  ><span>Navigation</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../ratings/ratings.html"><span>Rating</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../snackbar/snackbar.html"><span>Snackbar</span></a>
+              </li>
+
+              <li class="drawer-item">
+                <a href="../typography/typography.html"
+                  ><span>Typography</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
       </div>
-      <div>
-        <h3>Error</h3>
-        <p>This is an error alert with description - check it out!</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
-          distinctio!
-        </p>
-      </div>
-    </div>
-
-    <!-- alert-with-action -->
-
-    <div class="alert-container alert-error alert-action">
-      <div class="alert-icons">
+      <div class="main-content">
         <div>
-          <span> <i class="fas fa-exclamation-circle"></i></span>
+          <h1>Alerts</h1>
+          <p>
+            Alert component gives contextual feedback information for common
+            user operations.
+          </p>
         </div>
-        <div>
-          <p>This is an error alert with icon - check it out!</p>
-        </div>
+
+        <section class="code-component">
+          <h2>Basic alerts</h2>
+          <p>
+            The alert offers four severity levels that set a distinctive color.
+          </p>
+          <p>
+            To use this alert just use class name
+            <code class="code-class-name">alert-container</code> and also add
+            class according to alert type like
+            <code class="code-class-name">alert-error</code>,
+            <code class="code-class-name">alert-warning</code>,<code
+              class="code-class-name"
+              >alert-info</code
+            >,<code class="code-class-name">alert-success</code> .
+          </p>
+
+          <div class="code-demo alert-demo">
+            <div class="alert-container alert-error">
+              <p>This is an error alert — check it out!</p>
+            </div>
+
+            <div class="alert-container alert-warning">
+              <p>This is a warning — check it out!</p>
+            </div>
+
+            <div class="alert-container alert-info">
+              <p>This is an info — check it out!</p>
+            </div>
+
+            <div class="alert-container alert-success">
+              <p>This is a success — check it out!</p>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=627.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-error%2522%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520an%2520error%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520warning%2520warning%2520%25E2%2580%2594%2520check%2520it%2520out%21%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520an%2520info%2520info%2520%25E2%2580%2594%2520check%2520it%2520out%21%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520success%2520success%2520%25E2%2580%2594%2520check%2520it%2520out%21%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+
+        <section class="code-component">
+          <h2>Alert with Icons</h2>
+          <p>
+            Alert start with icon. Here you can use basic alert type colors
+            also.
+          </p>
+          <div class="code-demo alert-demo">
+            <div class="alert-container alert-success alert-icons">
+              <span> <i class="fa-solid fa-circle-check"></i></span>
+              <p>This is an success with icon - check it out!</p>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=897.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert-container%2520alert-success%2520alert-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520an%2520success%2520alert%2520with%2520icon%2520-%2520check%2520it%2520out%21%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%2520"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+
+        <section class="code-component">
+          <h2>Description</h2>
+          <p>You can defined you alert heading</p>
+          <div class="code-demo alert-demo">
+            <div class="alert-container alert-info alert-icons">
+              <span> <i class="fas fa-exclamation-circle"></i></span>
+              <div>
+                <h3>Heading</h3>
+                <p>This is an Info alert with description - check it out!</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque, distinctio!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=897.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-info%2520alert-icons%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EHeading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520an%2520Info%2520alert%2520with%2520description%2520-%2520check%2520it%2520out%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%2520Eaque%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520distinctio%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+
+        <section class="code-component">
+          <h2>Actions</h2>
+          <p>
+            An alert can have an action, such as a close button. It is rendered
+            after the message, at the end of the alert.
+          </p>
+          <div class="code-demo alert-demo">
+            <div class="alert-container alert-error alert-action">
+              <div class="alert-icons">
+                <span> <i class="fas fa-exclamation-circle"></i></span>
+                <p>This is an error alert with Button - check it out!</p>
+              </div>
+              <div>
+                <button>
+                  <i class="far fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=897.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert-container%2520alert-error%2520alert-action%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-icons%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520an%2520error%2520alert%2520with%2520%2520Button%2520-%2520check%2520it%2520out%21%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%2520"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
       </div>
-      <div>
-        <button>
-          <span><i class="far fa-times-circle"></i></span>
-        </button>
-      </div>
-    </div>
+    </main>
+
+    <script src="../../docs/docs-css/main.js"></script>
   </body>
 </html>

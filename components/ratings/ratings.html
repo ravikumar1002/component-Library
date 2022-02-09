@@ -2,36 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rating</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="ratings.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>particlesUI | Rating</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="ratings.css">
+  <link rel="stylesheet" href="../../docs/docs-css/docs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
- 
 
-<div class="star-rating fs-md">
-    <input type="radio" id="star5" name="rate"  class="input-star"/>
-    <label for="star5" class="fas fa-star"></label>
-    <input type="radio" id="star4" name="rate" class="input-star" />
-    <label for="star4" class="fas fa-star"></label>
-    <input type="radio" id="star3" name="rate" class="input-star"/>
-    <label for="star3" class="fas fa-star"></label>
-    <input type="radio" id="star2" name="rate" class="input-star"/>
-    <label for="star2" class="fas fa-star"></label>
-    <input type="radio" id="star1" name="rate" class="input-star" />
-    <label for="star1" class="fas fa-star"></label>
-  </div>
-   
+  <body>
 
-</body>
+    <header class="component-header">
+      <div class="header-right">
+        <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+        <h1><a href="../../index.html" class="brand-name">particlesUI</a></h1>
+      </div>
+      <div>
+        <nav>
+          <ul class="header-link">
+            <li>
+              <a href="../../index.html" class="btn-secondary nav-btn">
+                <i class="fas fa-home home-page-icon"></i><span class="header-nav-text">Home</span></a>
+            </li>
+            <li>
+              <a href="../../started/introduction/introduction.html" class="btn-secondary nav-btn"><i
+                  class="fas fa-book home-page-icon"></i><span class="header-nav-text">Documentation</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-</body>
+    <main>
+      <div class="aside-drawer-container">
+        <aside class="drawer">
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../../started/introduction/introduction.html"><span>Introduction</span></a>
+            </li>
+          </ul>
+          <div>
+            <h2>Component</h2>
+          </div>
+          <div>
+            <ul class="drawer-list">
+              <li class="drawer-item">
+                <a href="../alert/alert.html"><span>Alert</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../avatar/avatar.html"><span>Avatar</span></a>
+              </li>
+
+              <li class="drawer-item">
+                <a href="../badge/badge.html"><span>Badge</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../button/button.html"><span>Button</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../card/card.html"><span>Card</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../images/img.html"><span>Image</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../input/input.html"><span>Input</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../list/list.html"><span>Lists</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../modal/modal.html"><span>Modal</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../navigation/navigation.html"><span>Navigation</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../ratings/ratings.html" id="active-tab"><span>Rating</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../snackbar/snackbar.html"><span>Snackbar</span></a>
+              </li>
+
+              <li class="drawer-item">
+                <a href="../typography/typography.html"><span>Typography</span></a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="main-content">
+        <h1>Rating </h1>
+        <p>Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating
+          of their own.</p>
+        <section class="code-component">
+          <h2>Star Ratings</h2>
+          <p> you can adjust star size by changing <code class="code-class-code">fs-md</code> class name with another font size classes</p>
+          <div class="code-demo">
+            <div class="star-rating fs-md">
+              <input type="radio" id="star5" name="rate" class="input-star" />
+              <label for="star5" class="fas fa-star"></label>
+              <input type="radio" id="star4" name="rate" class="input-star" />
+              <label for="star4" class="fas fa-star"></label>
+              <input type="radio" id="star3" name="rate" class="input-star" />
+              <label for="star3" class="fas fa-star"></label>
+              <input type="radio" id="star2" name="rate" class="input-star" />
+              <label for="star2" class="fas fa-star"></label>
+              <input type="radio" id="star1" name="rate" class="input-star" />
+              <label for="star1" class="fas fa-star"></label>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <code>
+                      <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522star-rating%2520fs-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star5%2522%2520name%253D%2522rate%2522%2520%2520class%253D%2522input-star%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star5%2522%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star4%2522%2520name%253D%2522rate%2522%2520class%253D%2522input-star%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star4%2522%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star3%2522%2520name%253D%2522rate%2522%2520class%253D%2522input-star%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star3%2522%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star2%2522%2520name%253D%2522rate%2522%2520class%253D%2522input-star%2522%252F%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star2%2522%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star1%2522%2520name%253D%2522rate%2522%2520class%253D%2522input-star%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star1%2522%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A"
+                      sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    </code>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="../../docs/docs-css/main.js"></script>
+
+  </body>
 
 </html>

@@ -1,54 +1,49 @@
-
-.snackbar{
-      max-width: 35rem;
-      padding: 0.75rem;
-      border-radius: 3px;
-      z-index: 999;
+.snackbar {
+  max-width: 35rem;
+  padding: 0.75rem;
+  border-radius: 3px;
+  z-index: 999;
 }
 
-
-.snackbar-danger{
-    background-color: var(--danger-bg);
-    color: var(--danger);
+.snackbar-danger {
+  background-color: var(--danger-bg);
+  color: var(--danger);
 }
 
-.snackbar-success{
-    background-color: var(--success-bg);
-    color: var(--success);
+.snackbar-success {
+  background-color: var(--success-bg);
+  color: var(--success);
 }
 
-.snackbar-left-bottom{
-    position: fixed;
-    bottom: 3rem;
-    left: 5rem;
+.snackbar-left-bottom {
+  position: fixed;
+  bottom: 3rem;
+  left: 5rem;
 }
 
-.snackbar-centre-bottom{
-    position: fixed;
-    bottom: 3rem;
-    left: 35%;
+.snackbar-center-bottom {
+  position: fixed;
+  bottom: 3rem;
+  left: 35%;
 }
 
-.snackbar-right-bottom{
-    position: fixed
-    
+.snackbar-right-bottom {
+  position: fixed;
 }
 
-
-.snackbar-body{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: 0.5rem;
+.snackbar-body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.5rem;
 }
 
-.snackbar-content{
-    flex-grow: 1;
+.snackbar-content {
+  flex-grow: 1;
 }
 
-.snackbar-remove{
-    display: none;
+.snackbar-remove {
+  display: none;
 }
-

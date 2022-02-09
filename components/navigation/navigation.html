@@ -5,49 +5,137 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>nav</title>
+  <title>particlesUI | Navigation</title>
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet" href="../../docs/docs-css/docs.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="flex-space-between nav-bg-primary ">
-    <div>
-      <button class="btn-md"><i class="fas fa-bars  nav-text-primary"></i></button>
-      <span class="h3 nav-text-primary">Title</span>
+  <header class="component-header">
+    <div class="header-right">
+      <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+      <h1><a href="../../index.html" class="brand-name">particlesUI</a></h1>
     </div>
     <div>
-      <span class="input-search-&-btn">
-        <span class="input-search">
-          <span class="fas fa-search input-search-icon"></span>
-          <input type="search" class="input-search-input">
-        </span>
-        <button class="btn-primary btn-sm border-squre"> Search</button>
-      </span>
+      <nav>
+        <ul class="header-link">
+          <li>
+            <a href="../../index.html" class="btn-secondary nav-btn">
+              <i class="fas fa-home home-page-icon"></i><span class="header-nav-text">Home</span></a>
+          </li>
+          <li>
+            <a href="../../started/introduction/introduction.html" class="btn-secondary nav-btn"><i
+                class="fas fa-book home-page-icon"></i><span class="header-nav-text">Documentation</span></a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="horizontal-align-centre nav-text-primary">
-        <li class="list-style-none">
-          <button class="btn-md"><i class="fas fa-bars  nav-text-primary"></i></button></i>
-        </li>
-        <li class="list-style-none">
-          <button class="btn-md"><i class="fas fa-bars  nav-text-primary"></i></button></i>
-        </li>
-        <li class="list-style-none">
-          <button class="btn-md"><i class="fas fa-bars  nav-text-primary"></i></button></i>
-        </li>
-      </ul>
-    </nav>
   </header>
 
+  <main>
+    <div class="aside-drawer-container">
+      <aside class="drawer">
+        <ul class="drawer-list">
+          <li class="drawer-item">
+            <a href="../../started/introduction/introduction.html"><span>Introduction</span></a>
+          </li>
+        </ul>
+        <div>
+          <h2>Component</h2>
+        </div>
+        <div>
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../alert/alert.html"><span>Alert</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../avatar/avatar.html"><span>Avatar</span></a>
+            </li>
 
+            <li class="drawer-item">
+              <a href="../badge/badge.html"><span>Badge</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../button/button.html"><span>Button</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../card/card.html"><span>Card</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../images/img.html"><span>Image</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../input/input.html"><span>Input</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../list/list.html"><span>Lists</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../modal/modal.html"><span>Modal</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../navigation/navigation.html" id="active-tab"><span>Navigation</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../ratings/ratings.html"><span>Rating</span></a>
+            </li>
+            <li class="drawer-item">
+              <a href="../snackbar/snackbar.html"><span>Snackbar</span></a>
+            </li>
 
+            <li class="drawer-item">
+              <a href="../typography/typography.html"><span>Typography</span></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <div class="main-content">
+      <h1>Navigation</h1>
+      <p> Navigation bar is used to navigate through the web apps or websites. </p>
+      <section class="code-component">
+        <h2>Navigation bar</h2>
+        <p>Here is a simple navbar, one side has hamburger and title and other side has  icon buttons.</p>
+        <div class="code-demo">
+          <header class="flex-space-between nav-bg-primary nav-width">
+            <div class="inline-centre">
+              <button class="btn-md"><i class="fas fa-bars  nav-text-primary"></i></button>
+              <h3 class="nav-text-primary">Title</h3>
+            </div>
+            <nav class="nav-action-btns">
+              <ul class="horizontal-align-centre nav-text-primary">
+                <li class="list-style-none">
+                  <button class="btn-md"><i class="fa-solid fa-bookmark  nav-text-primary"></i></button>
+                </li>
+                <li class="list-style-none">
+                  <button class="btn-md"><i class="fa-solid fa-print  nav-text-primary"></i></button>
+                </li>
+                <li class="list-style-none">
+                  <button class="btn-md"><i class="fa-solid fa-download nav-text-primary"></i></button>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+        <div class="code-snippet">
+          <code>
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=572.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cheader%2520class%253D%2522flex-space-between%2520nav-bg-primary%2520nav-width%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inline-centre%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2520%2520nav-text-primary%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522nav-text-primary%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cnav%2520class%253D%2522nav-action-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522horizontal-align-centre%2520nav-text-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-style-none%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-md%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-bookmark%2520%2520nav-text-primary%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-style-none%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-md%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-print%2520%2520nav-text-primary%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-style-none%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-md%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-download%2520nav-text-primary%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%253C%252Fnav%253E%250A%2520%253C%252Fheader%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          </code>
+        </div>
+      </section>
+    </div>
+  </main>
 
-
+  <script src="../../docs/docs-css/main.js"></script>
 </body>
 
 </html>

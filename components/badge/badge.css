@@ -10,10 +10,10 @@
 /* ------------------color-badge--------------------------- */
 
 .badge-offline {
-  background-color: var(--seconday);
+  background-color: var(--secondary);
 }
 
-.badge-busy{
+.badge-busy {
   background-color: var(--danger);
 }
 
