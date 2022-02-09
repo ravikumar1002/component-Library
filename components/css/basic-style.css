@@ -1,9 +1,16 @@
-
-.flex-space-between{
+.flex-space-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   align-content: center;
 }
@@ -16,7 +23,18 @@
   width: 100%;
 }
 
-.d-none{
+.flex-align-centre {
+  display: flex;
+  align-items: center;
+}
+
+.inline-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-none {
   display: none;
 }
 
@@ -24,9 +42,14 @@
   border-radius: 0.4rem;
 }
 
-.list-style-none{
+.list-style-none {
   list-style-type: none;
 }
 
+.text-underline-none {
+  text-decoration: none;
+}
 
-
+.inline-flex {
+  display: inline-flex;
+}
