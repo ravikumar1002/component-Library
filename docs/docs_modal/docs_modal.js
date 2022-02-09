@@ -1,5 +1,5 @@
-let modalShowBtn = document.querySelectorAll(".modal-demo-btn");
-let modalShowDemo = document.querySelectorAll(".modal-demo-result");
+const modalShowBtn = document.querySelectorAll(".modal-demo-btn");
+const modalShowDemo = document.querySelectorAll(".modal-demo-result");
 
 modalShowBtn[0].addEventListener("click", () => {
   modalShowDemo[0].classList.add("modal-container");
