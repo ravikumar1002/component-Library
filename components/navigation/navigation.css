@@ -1,15 +1,24 @@
-
-.nav-bg-primary{
+.nav-bg-primary {
   background-color: var(--primary);
 }
 
-.nav-text-primary{
+.nav-text-primary {
   color: var(--light);
 }
 
-.horizontal-align-centre{
+.nav-width {
+  width: 100%;
+}
+
+.horizontal-align-centre {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.7rem;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-action-btns {
+    display: none;
+  }
 }
