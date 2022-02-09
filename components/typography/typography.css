@@ -1,95 +1,63 @@
 
-.fs-x-lg{
-    font-size: 3rem;
-    line-height: 4rem;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.fs-x-lg {
+  font-size: 3rem;
+  line-height: 4rem;
 }
 
 .fs-lg {
-    font-size: 2rem;
-    line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
-  
+
 .fs-md {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
-  
+
 .fs-sm {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
-  
+
 .fs-xs {
-    font-size: 0.5rem;
-    line-height: 1rem;
+  font-size: 0.5rem;
+  line-height: 1rem;
 }
 
-.h5{
-    font-size: 0.5rem;
-    line-height: 1rem;
-    font-weight: 600;
+.fw-300 {
+  font-weight: 300;
 }
 
-.h4{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 600;
+.fw-400 {
+  font-weight: 400;
 }
 
-.h3{
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 600;  
+.fw-500 {
+  font-weight: 600;
 }
 
-.h2{
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 600;
+.fw-700 {
+  font-weight: 700;
 }
 
-.h1{
-    font-size: 3rem;
-    line-height: 4rem;
-    font-weight: 600;
+.fw-900 {
+  font-weight: 900;
 }
 
-.fw-300{
-    font-weight: 300;
+.text-center {
+  text-align: center;
 }
 
-.fw-400{
-    font-weight: 400;
+.text-left {
+  text-align: left;
 }
 
-.fw-600{
-    font-weight: 600;
+.text-right {
+  text-align: right;
 }
 
-.fw-700{
-    font-weight: 700;
+.text-gray {
+  color: var(--text-gray);
 }
-
-.fw-900{
-    font-weight: 900;
-}
-
-
-.text-centre{
-    text-align: center;
-}
-
-.text-left{
-    text-align: left;
-}
-
-.text-right{
-    text-align: right;
-}
-
-
-.text-grey{
-    color: var(--grey);
-}
-
-
