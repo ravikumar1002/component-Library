@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
-    <link rel="stylesheet" href="../css/main.css" />
+    <title>particlesUI | Input</title>
     <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../../docs/docs_input/docs_input.css" />
+    <link rel="stylesheet" href="../../docs/docs-css/docs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -15,45 +17,225 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
-    <span class="input-text-container">
-      <label for="first-name">First Name</label>
-      <input
-        type="text"
-        id="first-name"
-        class="full-w-input"
-        placeholder="Type somthing"
-      />
-    </span>
+    <header class="component-header">
+      <div class="header-right">
+        <button class="drawer-btn"><i class="fas fa-bars"></i></button>
+        <h1>
+          <a href="../../home/home.html" class="brand-name">particlesUI</a>
+        </h1>
+      </div>
+      <div>
+        <nav>
+          <ul class="header-link">
+            <li>
+              <a href="../../home/home.html" class="btn-secondary nav-btn">
+                <i class="fas fa-home home-page-icon"></i
+                ><span class="header-nav-text">Home</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="../../started/introduction/introduction.html"
+                class="btn-secondary nav-btn"
+                ><i class="fas fa-book home-page-icon"></i
+                ><span class="header-nav-text">Documentation</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <span class="input-text-container input-err">
-      <label for="first-name">First Name*</label>
-      <input
-        type="text"
-        id="first-name"
-        class="full-w-input"
-        placeholder="Type somthing"
-      />
-      <div class="error-msg"><small>This is a required field</small></div>
-    </span>
+    <main>
+      <div class="aside-drawer-container">
+        <aside class="drawer">
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a href="../../started/introduction/introduction.html"
+                ><span>Introduction</span></a
+              >
+            </li>
+          </ul>
+          <div>
+            <h2>Component</h2>
+          </div>
+          <div>
+            <ul class="drawer-list">
+              <li class="drawer-item">
+                <a href="../alert/alert.html"><span>Alert</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../avatar/avatar.html"><span>Avatar</span></a>
+              </li>
 
-    <span class="input-radio-container">
-      <label for="radio-1"> <input type="radio"  id="radio-1" checked class="input-radio" /> Default checked</label>
-      <label for="radio-2"> <input type="radio" id="radio-2" class="input-radio" />Normal</label>
-      <label for="disabled" class="input-radio-disabled"> <input type="radio" id ="disabled" disabled  class="input-radio"/>Disabled</label>
-    </span>
+              <li class="drawer-item">
+                <a href="../badge/badge.html"><span>Badge</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../button/button.html"><span>Button</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../card/card.html"><span>Card</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../images/img.html"><span>Image</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../input/input.html" id="active-tab"
+                  ><span>Input</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../list/list.html"><span>Lists</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../modal/modal.html"><span>Modal</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../navigation/navigation.html"
+                  ><span>Navigation</span></a
+                >
+              </li>
+              <li class="drawer-item">
+                <a href="../ratings/ratings.html"><span>Rating</span></a>
+              </li>
+              <li class="drawer-item">
+                <a href="../snackbar/snackbar.html"><span>Snackbar</span></a>
+              </li>
 
+              <li class="drawer-item">
+                <a href="../typography/typography.html"
+                  ><span>Typography</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="main-content">
+        <h1>Input</h1>
+        <p>Reusable input components to take input from the user.</p>
+        <section class="code-component">
+          <h2>Input box</h2>
+          <p>This is a simple input box.</p>
+          <div class="code-demo">
+            <span class="input-text-container">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                class="full-w-input input-padding"
+                placeholder="Type something"
+              />
+            </span>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=572.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cspan%2520class%253D%2522input-text-container%2522%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522first-name%2522%253EFirst%2520Name%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522first-name%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522full-w-input%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Type%2520something%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%253C%252Fspan%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
-    <span class="input-search-btn ">
-      <span class="input-search">
-        <span class="fas fa-search input-search-icon"></span>
-        <input type="search" class="input-search-input" placeholder="Search">
-      </span>
-      <button class="btn-primary btn-sm border-squre"> Search</button>
-    </span>
+        <section class="code-component">
+          <h2>Input box with validation</h2>
+          <p>
+            You can <code class="code-class-name">input-err</code> and
+            <code class="code-class-name">error-msg</code> class for error
+            input.
+          </p>
+          <div class="code-demo">
+            <span class="input-text-container input-err">
+              <label for="first-name">First Name*</label>
+              <input
+                type="text"
+                id="first-name"
+                class="full-w-input input-padding"
+                placeholder="Type something"
+              />
+              <div class="error-msg">
+                <small>This is a required field</small>
+              </div>
+            </span>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=572.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cspan%2520class%253D%2522input-text-container%2520input-err%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522first-name%2522%253EFirst%2520Name*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522first-name%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522full-w-input%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Type%2520something%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522error-msg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253EThis%2520is%2520a%2520required%2520field%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fspan%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
 
+        <section class="code-component">
+          <h2>Radio input</h2>
+          <p>You can use individual radio input according to your.</p>
+          <div class="code-demo radio-input-section">
+            <span class="input-radio-container">
+              <label for="radio-1">
+                <input type="radio" id="radio-1" checked class="input-radio" />
+                Default checked</label
+              >
+              <label for="radio-2">
+                <input
+                  type="radio"
+                  id="radio-2"
+                  class="input-radio"
+                />Normal</label
+              >
+              <label for="disabled" class="input-radio-disabled">
+                <input
+                  type="radio"
+                  id="disabled"
+                  disabled
+                  class="input-radio"
+                />Disabled</label
+              >
+            </span>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=739.25&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522input-radio-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522radio-1%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520checked%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-radio%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253EDefault%2520checked%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522radio-2%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-radio%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253ENormal%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522disabled%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-radio-disabled%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%2520%253D%2522disabled%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520disabled%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-radio%2522%252F%253EDisabled%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%253C%252Fspan%253E%250A"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+
+        <section class="code-component">
+          <h2>Search input</h2>
+          <p>Here you can use search input.</p>
+          <div class="code-demo">
+            <span class="input-search">
+              <span class="fas fa-search input-search-icon"></span>
+              <input
+                type="search"
+                class="input-search-input"
+                placeholder="Search"
+              />
+            </span>
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=572.5&ds=true&dsyoff=0px&dsblur=2px&wc=true&wa=true&pv=8px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=167%25&si=false&es=2x&wm=false&code=%2520%253Cspan%2520class%253D%2522input-search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522fas%2520fa-search%2520input-search-icon%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522search%2522%2520class%253D%2522input-search-input%2522%2520placeholder%253D%2522Search%2522%253E%250A%2520%253C%252Fspan%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="../../docs/docs-css/main.js"></script>
   </body>
 </html>
-
-
-
