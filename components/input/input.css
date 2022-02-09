@@ -9,6 +9,10 @@
   padding: 0.2rem 0.1rem;
 }
 
+.input-padding{
+  padding: 0.1rem 0.3rem;
+}
+
 .input-err > *{
     color: var(--danger);
 }
@@ -32,7 +36,7 @@
 
 .input-search{
   background-color: var(--light-bg);
-  display: inline-block;
+  display: inline-flex;
   border: 1px solid var(--dark);
 }
 
@@ -41,8 +45,10 @@
   padding: 0.5rem 1rem ;
   font-size: 1rem;
   outline: none;
-  max-width: 25rem;
+  width: 100%;
 }
+
+
 
 .input-search-icon{
   padding: 0.5rem 1rem;
