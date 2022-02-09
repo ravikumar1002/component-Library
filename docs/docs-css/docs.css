@@ -12,6 +12,7 @@
   --gray-color: gray;
   --btn-box-shadow: rgb(0 0 0 / 10%);
   --dark: black;
+  --border-boxshadow: rgba(0, 0, 0, 0.1);
 
   --heading-color: rgb(43, 43, 43);
 }
