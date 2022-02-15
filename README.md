@@ -34,3 +34,9 @@ Explore the look and feel of components to speed up your development. The partic
 
    Documentation site : [particlesUI](https://particlesui.netlify.app/home/home.html)
  
+ ## Demo -
+    
+
+https://user-images.githubusercontent.com/86847625/154134692-e953c603-a458-4634-b2f9-c086b7ff47d5.mp4
+
+
