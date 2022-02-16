@@ -121,6 +121,12 @@
   max-width: 31rem;
 }
 
+.card-horizontal-img{
+  max-height: 13.7rem;
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+
+}
+
 /* -------------------------------------------------------- card with shadow */
 
 .card-shadow {
