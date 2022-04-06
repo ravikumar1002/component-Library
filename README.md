@@ -8,7 +8,9 @@ Explore the look and feel of components to speed up your development. The partic
 
  - HTML
  - Vanilla CSS
- - Vanilla JS
+ - JavaScript
+
+
  ## Components Defined in particlesUI - 
  
 - Alert
