@@ -1,0 +1,20 @@
+.grid > .grid-img-height {
+  height: 20rem;
+}
+.grid-50-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-30-70 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.grid-3-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-gap {
+  gap: 1rem;
+}
