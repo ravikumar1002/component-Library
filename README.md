@@ -8,7 +8,7 @@ Explore the look and feel of components to speed up your development. The partic
 
  - HTML
  - Vanilla CSS
- 
+ - Vanilla JS
  ## Components Defined in particlesUI - 
  
 - Alert
@@ -16,10 +16,11 @@ Explore the look and feel of components to speed up your development. The partic
 - Badge
 - Button
 - Card
+- Grid
 - Image
 - Input
 - List
-- MODAL
+- Modal
 - Navigation
 - Rating
 - Typography

@@ -35,7 +35,7 @@ main {
   left: 0;
   border-bottom: 1px solid var(--light-color);
   background-color: var(--light-bg);
-  z-index: 1000;
+  z-index: 6;
 }
 
 .main-content {
@@ -202,6 +202,22 @@ main {
   margin-bottom: 1rem;
 }
 
+.scroll-to-top-container{
+  position: fixed;
+  bottom: 5%;
+  z-index: 5;
+  right: 5%;
+}
+
+.scroll-to-top{
+  display: none;
+  font-size: 1.5rem;
+  background-color: var(--primary-bg);
+  padding: 1rem;
+  color: var(--light-color);
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 900px) {
   .drawer-btn {
     display: inline-block;
@@ -209,6 +225,9 @@ main {
 
   .aside-drawer-container {
     display: none;
+    position: fixed;
+    background: white;
+    z-index: 3;
   }
 }
 
