@@ -2,7 +2,7 @@
   max-width: 35rem;
   padding: 0.75rem;
   border-radius: 3px;
-  z-index: 999;
+  z-index: 5;
 }
 
 .snackbar-danger {
@@ -17,8 +17,8 @@
 
 .snackbar-left-bottom {
   position: fixed;
-  bottom: 3rem;
-  left: 5rem;
+  bottom: 2rem;
+  left: 2rem;
 }
 
 .snackbar-center-bottom {

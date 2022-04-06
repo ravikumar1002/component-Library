@@ -49,7 +49,7 @@
 }
 
 .btn-float-primary {
-  box-shadow: -1px -1px 10px 5px var(--secondary);
+  box-shadow: 0 0 0 2px var(--secondary);
   color: var(--primary);
   background-color: var(--light);
 }
@@ -116,56 +116,55 @@
   padding: 0 0 0 0.5rem;
 }
 
-.btn-float-top-right{
+.btn-float-top-right {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  z-index: 999;
+  z-index: 5;
 }
 
-.btn-float-top-left{
+.btn-float-top-left {
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
-  z-index: 999;
+  z-index: 5;
 }
 
-.btn-float-bottom-right{
+.btn-float-bottom-right {
   position: absolute;
   bottom: 0.5rem;
   right: 0.5rem;
-  z-index: 999;
+  z-index: 5;
 }
 
-.btn-float-bottom-left{
+.btn-float-bottom-left {
   position: absolute;
   bottom: 0.5rem;
   left: 0.5rem;
-  z-index: 999;
+  z-index: 5;
 }
 
-
-.btn-success{
+.btn-success {
   color: var(--success);
   background-color: var(--success-bg);
 }
 
-.btn-danger{
+.btn-danger {
   color: var(--danger);
   background-color: var(--danger-bg);
 }
 
-.btn-warning{
+.btn-warning {
   color: var(--warning);
   background-color: var(--warning-bg);
 }
 
-.btn-info{
+.btn-info {
   color: var(--info);
   background-color: var(--info-bg);
 }
 
-.btn-light{
+.btn-light {
   color: var(--light);
   background-color: var(--light-bg);
 }

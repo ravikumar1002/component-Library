@@ -1,10 +1,16 @@
 const modalShowBtn = document.querySelectorAll(".modal-demo-btn");
 const modalShowDemo = document.querySelectorAll(".modal-demo-result");
+const closeModel = document.querySelector(".model-close-btn")
 
 modalShowBtn[0].addEventListener("click", () => {
   modalShowDemo[0].classList.add("modal-container");
 
-  setTimeout(() => {
-    modalShowDemo[0].classList.remove("modal-container");
-  }, 1500);
+  // setTimeout(() => {
+  //   modalShowDemo[0].classList.remove("modal-container");
+  // }, 500);
 });
+
+closeModel.addEventListener("click" ,  ()=> {
+  modalShowDemo[0].classList.remove("modal-container");
+
+})
