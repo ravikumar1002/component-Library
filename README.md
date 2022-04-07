@@ -16,6 +16,7 @@ Explore the look and feel of components to speed up your development. The partic
 - Badge
 - Button
 - Card
+- Grid
 - Image
 - Input
 - List
