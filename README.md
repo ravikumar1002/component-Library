@@ -33,7 +33,7 @@ Explore the look and feel of components to speed up your development. The partic
    
 ## Live Link - 
 
-   Documentation site : [particlesUI](https://particlesui.netlify.app/)
+   Documentation site : [particlesUI](https://particlesui-v2.netlify.app/)
  
  ## Demo -
     
